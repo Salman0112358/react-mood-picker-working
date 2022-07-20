@@ -22,6 +22,17 @@ function MoodPickerDemo(): JSX.Element {
 
   };
 
+  const handleMoodChangeToWhale = () => {
+    queueRerenderWithNewMoodValue("It's whale time")
+  }
+
+  const handleMoodChangeToMonkey = () => {
+    queueRerenderWithNewMoodValue("It's Monkey TIME!!")
+  }
+
+  const handleMoodChangeToMilk = () => {
+    queueRerenderWithNewMoodValue("Enjoy a glass of milk...")
+  }
 
   return (
     <>
@@ -30,6 +41,9 @@ function MoodPickerDemo(): JSX.Element {
       <button onClick={handleMoodChangeToHappy}>😀</button>
       <button onClick={handleMoodChangeToConfused}>🤔</button>
       <button onClick={handleMoodChangeToSad}>😢</button>
+      <button onClick={handleMoodChangeToWhale}>🐋</button>
+      <button onClick={handleMoodChangeToMonkey}>🐵</button>
+      <button onClick={handleMoodChangeToMilk}>🥛</button>
     </>
   );
 }
